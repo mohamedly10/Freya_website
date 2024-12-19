@@ -1,0 +1,27 @@
+.theFooter{
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+}
+.upper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 8rem;
+    width: 100%;
+    background-color: rgb(225, 225, 225);
+}
+.upper img{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.bottom{
+    height: 20rem;
+    width: 100%;
+    background-color: rgb(22, 24, 32);
+}
+.bottom Description{
+    color: red;
+}

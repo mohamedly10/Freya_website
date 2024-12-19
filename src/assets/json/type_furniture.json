@@ -1,0 +1,19 @@
+{
+  "furniture": [
+    {
+      "title": "Residential",
+      "image": "https://prium.github.io/freya/v2.1.0/assets/img/img_1.jpg",
+      "description": "Elegant and cozy furniture for your home, blending comfort and style."
+    },
+    {
+      "title": "Commercial",
+      "image": "https://prium.github.io/freya/v2.1.0/assets/img/img_2.jpg",
+      "description": "Modern and durable furniture tailored for office and commercial spaces."
+    },
+    {
+      "title": "Hospitality",
+      "image": "https://prium.github.io/freya/v2.1.0/assets/img/img_3.jpg",
+      "description": "Stylish and functional furniture designed for hotels and restaurants."
+    }
+  ]
+}
