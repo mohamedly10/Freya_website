@@ -37,4 +37,22 @@
     color: #555;
     letter-spacing: 0.1rem;
   }
-  
+  .add_cart{
+    background-color: white;
+    border: black 1px solid;
+    padding: 5px;
+    border-radius: 50px;
+  }
+  .add_cart:hover{
+    background-color: black;
+    
+  }
+  .add_cart:hover a{
+   color: white;
+    
+  }
+
+  .add_cart a{
+text-decoration: none;
+color: black;
+  }

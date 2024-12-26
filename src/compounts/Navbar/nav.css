@@ -1,54 +1,72 @@
+/* Navbar Container */
 .navbar {
-    margin: 10px auto; /* Center the navbar horizontally within its parent */
     position: fixed;
+    width: 80%;
+    margin: 10px auto;
+    right: 50%;
+    transform: translateX(50%);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: rgba(234, 234, 235, 0.9);
     border-radius: 30px;
-    align-items: center;
-    width: 80%; /* Optional: set a fixed width for the navbar */
-    right: 50%; /* Center the navbar horizontally */
-    transform: translateX(50%); /* Offset to ensure the navbar aligns perfectly at the center */
     z-index: 2;
-  }
-  
-.navbar-left {
-    gap: 20px;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    align-items: center;
 }
 
+/* Common Flex Container Styles */
+.navbar-left,
+.option,
+.navbar-right,
+.socialMedia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar-right {
+    margin-right: 2rem;
+    gap: 12px;
+}
+
+/* Link Styles */
 .navbar-left a {
     display: flex;
+    align-items: center;
+    gap: 5px;
     color: rgb(64, 64, 64);
     font-weight: 600;
     text-decoration: none;
     font-size: 1rem;
-    align-items: center;
-    gap: 5px;
-  
 }
-.navbar-left img{
+
+/* Image Styles */
+img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.navbar-left img {
     width: 0.8rem;
     height: 0.8rem;
 }
 
-.navbar-right {
-    gap: 12px;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    margin-right: 2rem;
+/* Logo Styles */
+.logo {
+    padding: 5px;
+    background-color: black;
+    border-radius: 30% 30% 0;
 }
-img{
-    width: 1rem;
-    height: 1rem;
+
+.logo a {
+    color: white;
 }
+
+/* Dropdown Styles */
 .DropDown {
-    position: relative; /* Create a reference for the dropdown content */
-  }
+    position: relative;
+}
 
 .Drop_Down_content {
     display: none;
@@ -56,53 +74,71 @@ img{
     top: 100%;
     left: 10%;
     min-width: 100px;
-    text-align: center;
+    padding: 1rem;
     background-color: rgba(234, 234, 235, 0.95);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     list-style: none;
-    padding: 1rem;
+    text-align: center;
 }
 
-.DropDown:hover .Drop_Down_content{
-display: flex;
-flex-direction: column;
-gap: 1rem;
+.DropDown:hover .Drop_Down_content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-.logo {
-    padding: 5px;
-    background-color: black;
-    border-radius: 30% 30% 0%;
+/* Hidden Elements by Default */
+.Draw,
+.DropDown_smallScreen {
+    display: none;
 }
 
-.logo a {
-    color: white;
-}
 
-/* Media Queries */
-@media (max-width: 1024px) {
-
-}
-
+/* Media Query */
 @media (max-width: 958px) {
-    .logo{
-        display: none;
-    }
-    .navbar-left{
+    .navbar-left {
         flex-wrap: wrap;
-        align-items: center;
-   justify-content: center;
-   padding-right: 10%;
+        justify-content: center;
+        padding-right: 10%;
     }
+
     .navbar-left a {
-        text-decoration: none;
         font-size: 0.75rem;
     }
-}
 
-@media (max-width: 510px) {
-    .navbar-right {
+    /* Show/Hide Elements */
+    .option,
+    .socialMedia {
         display: none;
     }
-   
+
+    .DropDown_smallScreen {
+        display: flex;
+    }
+
+    /* Small Screen Dropdown */
+    .Drop_Down_content_s {
+        display: none;
+        position: absolute;
+        top: 60%;
+        left: 80%;
+        min-width: 100px;
+        padding: 1rem;
+        background-color: rgba(234, 234, 235, 0.95);
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        list-style: none;
+        text-align: center;
+    }
+
+    .Drop_Down_content_s a {
+        color: rgb(64, 64, 64);
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .DropDown_smallScreen:hover .Drop_Down_content_s {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
 }
