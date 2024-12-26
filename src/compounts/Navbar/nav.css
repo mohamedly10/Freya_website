@@ -141,4 +141,22 @@ img {
         flex-direction: column;
         gap: 1rem;
     }
+
+    .Drop_Down_content_2{
+        display: none;
+        position: absolute;
+        top: 60%;
+      right: 85%;
+        min-width: 100px;
+        padding: 1rem;
+        background-color: rgba(234, 234, 235, 0.95);
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        list-style: none;
+        text-align: center;
+    }
+    .Drop_Down_content_s:hover .Drop_Down_content_2{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
 }

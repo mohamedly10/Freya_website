@@ -43,7 +43,7 @@ const NavDropdownSmall = ({ title, dropdownItems }) => (
         {title}
       </a>
     </li>
-    <ul className="Drop_Down_content">
+    <ul className="Drop_Down_content_2">
       {dropdownItems.map((item, index) => (
         <li key={index}><a href="#">{item}</a></li>
       ))}
@@ -98,8 +98,7 @@ const NavBar = () => {
           <ul className="Drop_Down_content_s">
             {navItems.map((item, index) => (
               item.hasDropdown?
-           <NavDropdownSmall 
-           className="the"
+           <NavDropdownSmall
            title={item.title}
            dropdownItems={item.dropdownItems}
            />
